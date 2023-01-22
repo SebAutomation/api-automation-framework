@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2021-12/schema",
+  "$id": "resource:/schemas/roles.json",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "values": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "values"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "roles"
+  ],
+  "additionalProperties": false
+}
